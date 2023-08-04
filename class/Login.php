@@ -35,7 +35,7 @@
             $result = $this->check();
             if($result == 0){
                 return "Mot de passe incorrect";
-            }else if($result == 1){
+            }else if($result == -1){
                 return "Email incorrect créé vous un compte";
             }else{
                 $_SESSION['name'] = $result;
